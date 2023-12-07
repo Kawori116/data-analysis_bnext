@@ -8,5 +8,5 @@ urlpatterns = [
     # For home
     path('', views.home, name='home'),
     # For Ajax
-    path('api_get_cate_topword/', views.api_get_cate_topword),
+    path('topwords/api_get_cate_topword/', views.api_get_cate_topword),
 ]

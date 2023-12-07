@@ -4,7 +4,7 @@ import pandas as pd
 
 # render渲染網頁
 def home(request):
-    return render(request, 'app_top_keywords/home.html')
+    return render(request, 'app_top_keywords/index.html')
 
 # read df
 df_topkey = pd.read_csv('app_top_keywords/dataset/cna_news_topkey_with_category_via_token_pos.csv', sep=',')
@@ -22,10 +22,12 @@ del df_topkey
 from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
 def api_get_cate_topword(request):
+    print("API GET CATE VIEW")
     cate = request.POST.get('news_category')
     topk = request.POST.get('topk')
     topk = int(topk)
     print(cate, topk)
+    
 
     chart_data, wf_pairs = get_category_topword(cate, topk)
     clouddata = []
