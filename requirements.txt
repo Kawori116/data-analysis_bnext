@@ -1,0 +1,108 @@
+## Create your virtual environment first
+# conda create -n ai27 python=3.8  # Older version we used last year
+# conda create -n ai210 python=3.8
+
+## Go to your virtual enviroment
+# conda activate ai210
+
+## Install all packages that you need
+# pip install -r 10-10-requirement-2023-ai.txt
+
+## Here are the packages we need to install
+# Vision
+#opencv-python
+#pillow
+#scikit-image
+
+
+#Jupyter notebook
+jupyter
+jupyterlab
+
+# Tensorflow Deep learning
+# tensorflow==2.7 # Older version
+tensorflow==2.10 
+tensorflow_datasets
+tensorflow-text
+# tensorflow-text 2.10.0 requires tensorflow<2.11,>=2.10.0
+
+pyyaml
+pydot
+
+# Data analysis
+scikit-learn
+pandas
+
+# Excel related
+openpyxl
+xlrd
+
+#plot chart
+bokeh
+seaborn
+plotly
+matplotlib
+
+#Website
+django
+django-cors-headers
+django-apscheduler
+gradio
+streamlit
+
+# VS code IDE tools
+pylint
+autopep8
+yapf
+
+
+# database
+SQLAlchemy
+PyMySQL
+
+#Job schedule
+schedule
+
+
+
+# NLP
+beautifulsoup4
+requests
+selenium
+gensim
+#gensim==3.8.3
+snownlp
+#baidu-aip
+twnews
+newspaper3k
+nltk
+spacy
+wordcloud
+fake_useragent
+
+
+#NLP transformers
+transformers==4.16.2
+simpletransformers
+simplet5
+
+
+# Chinese word segmentation
+ckiptagger[tf,gdown]
+ckip-transformers
+jieba
+
+# Conversion between simplified and traditional Chinese
+opencc-python-reimplemented
+
+## Install Torch Stable (1.11)
+# https://pytorch.org/
+
+torch==1.11 
+torchvision 
+torchaudio
+
+
+# pip install torch==1.8.2+cpu torchvision==0.9.2+cpu torchaudio===0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
+# pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
