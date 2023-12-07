@@ -4,7 +4,7 @@ import pandas as pd
 
 # render渲染網頁
 def home(request):
-    return render(request, 'app_top_keywords/index.html')
+    return render(request, 'app_top_keywords/home.html')
 
 # read df
 df_topkey = pd.read_csv('app_top_keywords/dataset/cna_news_topkey_with_category_via_token_pos.csv', sep=',')
