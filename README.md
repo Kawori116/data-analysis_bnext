@@ -15,18 +15,22 @@
 
 1. **Clone 專案至本地端**
 
+   ```bash
    git clone https://github.com/Kawori116/data-analysis_bnext.git
    cd your-repository
 
 2. **建立、啟動虛擬環境**
 
+   ```bash
    conda create -n ai210 python=3.8
    conda activate ai210
 
 3. **安裝專案的需求**
 
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 4. **執行專案**
 
-  python manage.py runserver
+   ```bash
+   python manage.py runserver
